@@ -1,4 +1,6 @@
 package com.ocr.appsMagiWorld;
+import com.ocr.fonctionnementMagiWorld.;
+import com.ocr.personnagesMagiWorld.;
 
 public class Main {
 

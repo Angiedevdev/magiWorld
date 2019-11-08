@@ -1,4 +1,4 @@
-package com.ocr.appsMagiWorld;
+package com.ocr.personnagesMagiWorld;
 
 public class Personnages {
 
@@ -79,11 +79,11 @@ public class Personnages {
     }
     //------AUTRES-------
 
-    public int AttaqueBasique() {
-        // return ; Ici trouver quoi mettre
+    public String AttaqueBasique() {
+        return "Invocation attaque basique classe Mère";
     }
 
-    public int AttaqueSpeciale() {
-        // return ; Ici trouver quoi mettre
+    public String AttaqueSpeciale() {
+        return "Invocation attaque spéciale classe Mère";
     }
 }
