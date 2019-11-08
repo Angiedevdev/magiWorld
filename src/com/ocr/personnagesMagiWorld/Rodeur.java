@@ -2,7 +2,7 @@ package com.ocr.personnagesMagiWorld;
 
 public class Rodeur extends Personnages {
 
-    //Constructeur par defaut
+    //Constructeur par défaut
     public Rodeur() {
         super();
     }
@@ -13,8 +13,6 @@ public class Rodeur extends Personnages {
         // a virer
         System.out.println("Je suis un rôdeur (" + getVie() + " de vitalité), de niveau " + jNiveau + ", de force " + jForce + ", d'intelligence " + jIntelligence + ", d'agilité " + jAgilite + ".");
     }
-
-    //Mettre ici les attaques
     public String AttaqueBasique() {
         // if tour du joueur 1
         //vie.joueur(2) = viejoueur(2) - agilite.joueur(1);

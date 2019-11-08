@@ -1,10 +1,12 @@
 package com.ocr.personnagesMagiWorld;
 
 public class Guerrier extends Personnages {
+    //Constructeur par défaut
     public Guerrier() {
         super();
     }
     //Constructeur avec paramètres
+
     public Guerrier(int jNiveau, int jForce, int jIntelligence, int jAgilite) {
         super(jNiveau, jForce, jIntelligence, jAgilite);
         // a virer

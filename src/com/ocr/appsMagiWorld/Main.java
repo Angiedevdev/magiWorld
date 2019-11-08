@@ -1,11 +1,16 @@
 package com.ocr.appsMagiWorld;
-import com.ocr.fonctionnementMagiWorld.;
+
+import java.util.*.;
 import com.ocr.personnagesMagiWorld.;
+import com.ocr.fonctionnementMagiWorld.;
 
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+
         System.out.println("Hi");
+
     }
+
+
 }

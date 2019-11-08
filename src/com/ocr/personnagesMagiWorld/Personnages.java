@@ -10,6 +10,7 @@ public class Personnages {
 
 
     //Constructeur par defaut
+
     public Personnages() {
         niveau = 0;
         force = 0;
@@ -27,6 +28,8 @@ public class Personnages {
     }
 
     //-----ACCESSEURS----- attention voir si toujours utiles après.
+
+
     public int getNiveau() {
         return niveau;
     }
@@ -48,6 +51,8 @@ public class Personnages {
     }
 
     //-------MUTATEURS----- attention voir si toujours utiles après.
+
+
     public void setNiveau(int jNiveau) {
         niveau = jNiveau;
     }

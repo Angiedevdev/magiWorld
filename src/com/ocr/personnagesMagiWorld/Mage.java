@@ -1,6 +1,7 @@
 package com.ocr.personnagesMagiWorld;
 
 public class Mage extends Personnages {
+    //Constructeur par défaut
     public Mage() {
         super();
     }

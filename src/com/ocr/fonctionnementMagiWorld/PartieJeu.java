@@ -1,5 +1,4 @@
 package com.ocr.fonctionnementMagiWorld;
 
-public class Batailles {
-
+public class PartieJeu {
 }
