@@ -1,31 +1,21 @@
 package com.ocr.personnagesMagiWorld;
 
 public class Rodeur extends Personnages {
-
-    //Constructeur par défaut
     public Rodeur() {
         super();
     }
-
     //Constructeur avec paramètres
-    public Rodeur(int jNiveau, int jForce, int jIntelligence, int jAgilite) {
-        super(jNiveau, jForce, jIntelligence, jAgilite);
-        // a virer
-        System.out.println("Je suis un rôdeur (" + getVie() + " de vitalité), de niveau " + jNiveau + ", de force " + jForce + ", d'intelligence " + jIntelligence + ", d'agilité " + jAgilite + ".");
+    public Rodeur(int vie, int niveau, int force, int intelligence, int agilite) {
+        super(vie, niveau, force, intelligence, agilite);
     }
-    public String AttaqueBasique() {
-        // if tour du joueur 1
-        //vie.joueur(2) = viejoueur(2) - agilite.joueur(1);
-        //else (tour joueur 2)
-        //(vie.joueur(1) = viejoueur(1) - agilite.joueur(2);
-        return "Invocation de l'attaque basique classe fille Rodeur"; //A retirer après test.
+    public void description() {
+        System.out.println("Je suis un nouveau rodeur" + "(" + getVie() + " de vitalité), de niveau " + getNiveau() + ", de force " + getForce() + ", d'intelligence " + getIntelligence() + ", d'agilité " + getAgilite() + ".");
     }
-    public String AttaqueSpeciale() {
-        // if tour du joueur 1
-        //agilite.joueur(1) = niveaujoueur(1) / 2;
-        //else (tour joueur 2)
-        //agilite.joueur(2) = niveaujoueur(2) / 2;
-        return "Invocation de l'attaque basique classe fille Rodeur"; //A retirer après test.
+    public void attaqueBasique() {
+        //si joueur 1 est attaquant
+        vie.joueur(2) = viejoueur(2) - agilite.joueur(1);
     }
-
+    public void attaqueSpeciale() {
+        agilite = niveau/2;
+    }
 }

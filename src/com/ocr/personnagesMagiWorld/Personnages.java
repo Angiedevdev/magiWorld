@@ -2,93 +2,74 @@ package com.ocr.personnagesMagiWorld;
 
 public class Personnages {
 
-    private int niveau;
-    private int force;
-    private int intelligence;
-    private int agilite;
-    private int vie;
-
-
+   protected int vie, niveau, force, intelligence, agilite;
     //Constructeur par defaut
-
-    public Personnages() {
+    protected Personnages() {
         niveau = 0;
         force = 0;
         intelligence = 0;
         agilite = 0;
         this.getVie();
     }
-
-    public Personnages(int jNiveau, int jForce, int jIntelligence, int jAgilite) {
-        niveau = jNiveau;
-        force = jForce;
-        intelligence = jIntelligence;
-        agilite = jAgilite;
-        vie = niveau * 5;
+    protected Personnages(int vie, int niveau, int force, int intelligence, int agilite) {
+        this.vie = niveau*5;
+        this.niveau = niveau;
+        this.force = force;
+        this.intelligence = intelligence;
+        this.agilite = agilite;
     }
-
-    //-----ACCESSEURS----- attention voir si toujours utiles après.
-
-
+    //-----ACCESSEURS-----
+    //Permet d'accéder à la vie du personnage :
+    public int getVie() {
+        return vie;
+    }
+    //Permet d'accéder au niveau du personnage :
     public int getNiveau() {
         return niveau;
     }
-
+    //Permet d'accéder à la force du personnage :
     public int getForce() {
         return force;
     }
-
+    //Permet d'accéder à l'intelligence du personnage :
     public int getIntelligence() {
         return intelligence;
     }
-
+    //Permet d'accéder à l'agilité du personnage :
     public int getAgilite() {
         return agilite;
     }
-
-    public int getVie() { // !!!!!!!!! *5 !!!!!
-        return vie;
+    //-------MUTATEURS-----
+    //Permet de modifier la vie du personnage : (!!!!!!!Attention peut-être à retirer puisque la vie s'initialise par calcul.
+    public void setVie(int vie) {
+        this.vie = vie;
     }
-
-    //-------MUTATEURS----- attention voir si toujours utiles après.
-
-
-    public void setNiveau(int jNiveau) {
-        niveau = jNiveau;
+    //Permet de modifier le niveau du personnage :
+    public void setNiveau(int niveau) {
+        this.niveau = niveau;
     }
-
-    public void setForce(int jForce) {
-        force = jForce;
+    //Permet de modifier la force du personnage :
+    public void setForce(int force) {
+        this.force = force;
     }
-
-    public void setIntelligence(int jIntelligence) {
-        intelligence = jIntelligence;
+    //Permet de modifier l'intelligence du personnage :
+    public void setIntelligence(int intelligence) {
+        this.intelligence = intelligence;
     }
-
-    public void setAgilite(int jAgilite) {
-        agilite = jAgilite;
+    //Permet de modifier l'agilité du personnage :
+    public void setAgilite(int agilite) {
+        this.agilite = agilite;
     }
-
-    public void setVie(int jVie) {
-        vie = jVie;
+    //------FONCTIONS-------
+    //Permet d'afficher la description complète du personnage :
+    public void description() {
+        System.out.println("Je suis un nouveau personnage" + "(" + getVie() + " de vitalité), de niveau " + getNiveau() + ", de force " + getForce() + ", d'intelligence " + getIntelligence() + ", d'agilité " + getAgilite() + ".");
     }
-
-    public void getClass(String perso) {// pour le getclass qui suit
-
+    //Permet une attaque basique
+    public void attaqueBasique() {
+        System.out.println("J'attaque doucement avec mon attaqueBasique");
     }
-
-    public String description() { //Ici le 1 2 et 3 servent uniquement à savoir ce qui est imprimé // Revoir cette méthode.... PAs bonne
-
-        //else // getclass
-        return "Je suis un */mettre getclass/* (" + getVie() + " de vitalité), de niveau " + getNiveau() + ", de force " + getForce() + ", d'intelligence " + getIntelligence() + ", d'agilité " + getAgilite() + ".";
-    }
-    //------AUTRES-------
-
-    public String AttaqueBasique() {
-        return "Invocation attaque basique classe Mère";
-    }
-
-    public String AttaqueSpeciale() {
-        return "Invocation attaque spéciale classe Mère";
+    public void attaqueSpeciale() {
+        System.out.println("J'attaque doucement avec mon attaqueSpeciale");
     }
 }

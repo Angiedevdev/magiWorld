@@ -6,24 +6,17 @@ public class Mage extends Personnages {
         super();
     }
     //Constructeur avec paramètres
-    public Mage(int jNiveau, int jForce, int jIntelligence, int jAgilite) {
-        super(jNiveau, jForce, jIntelligence, jAgilite);
-        // a virer
-        System.out.println("Je suis un mage (" + getVie() + " de vitalité), de niveau " + jNiveau + ", de force " + jForce + ", d'intelligence " + jIntelligence + ", d'agilité " + jAgilite + ".");
+    public Mage(int vie, int niveau, int force, int intelligence, int agilite) {
+        super(vie, niveau, force, intelligence, agilite);
     }
-
-    public String AttaqueBasique() {
-        // if tour du joueur 1
-        //vie.joueur(2) = viejoueur(2) - intelligence.joueur(1);
-        //else (tour joueur 2)
-        //(vie.joueur(1) = viejoueur(1) - intelligence.joueur(2);
-        return "Invocation de l'attaque basique classe fille Mage"; //A retirer après test.
+    public void description() {
+        System.out.println("Je suis un nouveau mage" + "(" + getVie() + " de vitalité), de niveau " + getNiveau() + ", de force " + getForce() + ", d'intelligence " + getIntelligence() + ", d'agilité " + getAgilite() + ".");
     }
-    public String AttaqueSpeciale() {
-        // if tour du joueur 1
-        //revoir la formule avec Thie car énoncé pas clair pour moi
-        //else (tour joueur 2)
-        //(vie.joueur(2) = viejoueur(1) - intelligence.joueur(2);
-        return "Invocation de l'attaque basique classe fille Mage"; //A retirer après test.
+    public void attaqueBasique() {
+        //si joueur 1 est attaquant
+        vie.joueur2 = joueur2.vie - joueur1.vie;
+    }
+    public void attaqueSpeciale() {
+        vie= intelligence*2;
     }
 }

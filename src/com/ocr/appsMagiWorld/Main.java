@@ -1,15 +1,11 @@
 package com.ocr.appsMagiWorld;
 
-import java.util.*.;
-import com.ocr.personnagesMagiWorld.;
-import com.ocr.fonctionnementMagiWorld.;
+import com.ocr.fonctionnementMagiWorld.PartieJeu;
 
 public class Main {
 
     public static void main(String[] args) {
-
-        System.out.println("Hi");
-
+        PartieJeu partie = new PartieJeu();
     }
 
 
