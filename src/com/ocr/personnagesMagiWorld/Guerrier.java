@@ -12,11 +12,14 @@ public class Guerrier extends Personnages {
     public void description() {
         System.out.println("Je suis un nouveau Guerrier" + "(" + getVie() + " de vitalité), de niveau " + getNiveau() + ", de force " + getForce() + ", d'intelligence " + getIntelligence() + ", d'agilité " + getAgilite() + ".");
     }
-    public void attaqueBasique() {
-        //si joueur 1 est attaquant
-        vie.joueur(2) = viejoueur(2) - force.joueur(1);
+    @Override
+    public void attaqueBasique(Personnages victime) {
+        super.attaqueBasique(victime);
+        victime.vie = victime.vie - this.force;
     }
-    public void attaqueSpeciale() {
-        vie.joueur(2) = viejoueur(2) - (force*2).joueur(1);
+    @Override
+    public void attaqueSpeciale(Personnages victime) {
+        victime.vie = victime.vie - (this.force*2);
+        this.force = this.force / 2;
     }
 }

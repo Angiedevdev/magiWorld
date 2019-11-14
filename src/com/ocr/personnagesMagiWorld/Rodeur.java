@@ -11,11 +11,14 @@ public class Rodeur extends Personnages {
     public void description() {
         System.out.println("Je suis un nouveau rodeur" + "(" + getVie() + " de vitalité), de niveau " + getNiveau() + ", de force " + getForce() + ", d'intelligence " + getIntelligence() + ", d'agilité " + getAgilite() + ".");
     }
-    public void attaqueBasique() {
-        //si joueur 1 est attaquant
-        vie.joueur(2) = viejoueur(2) - agilite.joueur(1);
+
+    @Override
+    public void attaqueBasique(Personnages victime) {
+        super.attaqueBasique(victime);
+        victime.vie = victime.vie - this.agilite;
     }
-    public void attaqueSpeciale() {
-        agilite = niveau/2;
+    @Override
+    public void attaqueSpeciale(Personnages victime) {
+        this.agilite = this.niveau / 2;
     }
 }

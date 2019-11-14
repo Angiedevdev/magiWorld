@@ -1,6 +1,6 @@
 package com.ocr.personnagesMagiWorld;
 
-public class Personnages {
+public abstract class Personnages {
 
    protected int vie, niveau, force, intelligence, agilite;
     //Constructeur par defaut
@@ -66,10 +66,10 @@ public class Personnages {
         System.out.println("Je suis un nouveau personnage" + "(" + getVie() + " de vitalité), de niveau " + getNiveau() + ", de force " + getForce() + ", d'intelligence " + getIntelligence() + ", d'agilité " + getAgilite() + ".");
     }
     //Permet une attaque basique
-    public void attaqueBasique() {
+    public void attaqueBasique(Personnages victime) {
         System.out.println("J'attaque doucement avec mon attaqueBasique");
     }
-    public void attaqueSpeciale() {
+    public void attaqueSpeciale(Personnages victime) {
         System.out.println("J'attaque doucement avec mon attaqueSpeciale");
     }
 }
