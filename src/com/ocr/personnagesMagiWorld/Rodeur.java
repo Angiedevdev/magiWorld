@@ -1,6 +1,7 @@
 package com.ocr.personnagesMagiWorld;
 
 public class Rodeur extends Personnages {
+    //Constructeurs par défaut
     public Rodeur() {
         super();
     }
@@ -8,17 +9,14 @@ public class Rodeur extends Personnages {
     public Rodeur(int vie, int niveau, int force, int intelligence, int agilite) {
         super(vie, niveau, force, intelligence, agilite);
     }
-    public void description() {
-        System.out.println("Je suis un nouveau rodeur" + "(" + getVie() + " de vitalité), de niveau " + getNiveau() + ", de force " + getForce() + ", d'intelligence " + getIntelligence() + ", d'agilité " + getAgilite() + ".");
-    }
-
     @Override
     public void attaqueBasique(Personnages victime) {
-        super.attaqueBasique(victime);
         victime.vie = victime.vie - this.agilite;
+        super.attaqueBasique(victime);
     }
     @Override
     public void attaqueSpeciale(Personnages victime) {
-        this.agilite = this.niveau / 2;
+        this.agilite = this.agilite + (this.niveau / 2);
+        super.attaqueSpeciale(victime);
     }
 }

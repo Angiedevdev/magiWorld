@@ -42,7 +42,7 @@ public abstract class Personnages {
     //-------MUTATEURS-----
     //Permet de modifier la vie du personnage : (!!!!!!!Attention peut-être à retirer puisque la vie s'initialise par calcul.
     public void setVie(int vie) {
-        this.vie = vie;
+        this.vie = this.niveau*5;
     }
     //Permet de modifier le niveau du personnage :
     public void setNiveau(int niveau) {
@@ -63,13 +63,16 @@ public abstract class Personnages {
     //------FONCTIONS-------
     //Permet d'afficher la description complète du personnage :
     public void description() {
-        System.out.println("Je suis un nouveau personnage" + "(" + getVie() + " de vitalité), de niveau " + getNiveau() + ", de force " + getForce() + ", d'intelligence " + getIntelligence() + ", d'agilité " + getAgilite() + ".");
+        System.out.println("Je suis un "+ getClass().getSimpleName() + " (" + getVie() + " de vitalité), de niveau " + getNiveau() + ", de force " + getForce() + ", d'intelligence " + getIntelligence() + ", d'agilité " + getAgilite() + ".");
     }
     //Permet une attaque basique
     public void attaqueBasique(Personnages victime) {
-        System.out.println("J'attaque doucement avec mon attaqueBasique");
+        System.out.println("Je viens de lancer l'attaque basique. Regarde le résultat : ");
+        System.out.println("Il te reste " + victime.vie + " de vitalité, " + victime.force + " de force, " + victime.intelligence + " d'intelligence, " + victime.agilite + " d'agilité !");
     }
     public void attaqueSpeciale(Personnages victime) {
-        System.out.println("J'attaque doucement avec mon attaqueSpeciale");
+        System.out.println("Je viens de lancer l'attaque spéciale. Regarde le résultat :");
+        System.out.println("Il te reste " + victime.vie + " de vitalité, " + victime.force + " de force, " + victime.intelligence + " d'intelligence, " + victime.agilite + " d'agilité!");
+        System.out.println("Quant à moi, il me reste " + this.vie + " de vitalité, " + this.force + " de force, " + this.intelligence + " d'intelligence, " + this.agilite + " d'agilité!");
     }
 }
