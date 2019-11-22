@@ -5,6 +5,7 @@ import com.ocr.personnagesMagiWorld.Mage;
 import com.ocr.personnagesMagiWorld.Personnages;
 import com.ocr.personnagesMagiWorld.Rodeur;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class PartieJeu {
@@ -41,138 +42,65 @@ public class PartieJeu {
         System.out.println("          Veuillez configurez vos joueurs :          ");
         do {
             System.out.println("              Joueur 1, entre dans l'arène et crée ton personnage ! \nQue souhaites-tu devenir ? (Saisis 1,2 ou 3) : \n1- Un guerrier; \n2- Un rôdeur; \n3- Un mage.");
-            type = sc.nextInt();
+            try {
+                type = sc.nextInt();
+            } catch (InputMismatchException e ) {
+                sc.nextLine();
+                System.out.println("Vous avez saisie un caractère. Merci de saisir un chiffre !");
+            }
             switch (type) {
                 case 1:
                     System.out.println("\nVous avez choisi de créer un guerrier !\n");
                     joueur1 = new Guerrier();
-                    do {
-                        do {
-                                System.out.println("Attribut un niveau à ton personnage. \nAttention : Il doit être en 1 et 100 et le total de : FORCE + AGILITE + INTELLIGENCE doit être égal au niveau !\n ");
-                                choixNiveau = sc.nextInt();
-                                if (choixNiveau < 1 || choixNiveau > 100)
-                                    System.out.println("Attention, tu dois choisir entre 1 et 100.");
-                                else
-                                    joueur1.setNiveau(choixNiveau);
-                            } while (choixNiveau < 1 || choixNiveau > 100);
-                        do {
-                                System.out.println("Attribut la force à ton personnage. Attention il doit être en 0 et 100.");
-                                choixForce = sc.nextInt();
-                                if (choixForce < 0 || choixForce > 100)
-                                    System.out.println("Attention, tu dois choisir entre 0 et 100.");
-                                else
-                                    joueur1.setForce(choixForce);
-                            } while (choixForce < 0 || choixForce > 100);
-                        do {
-                                System.out.println("Attribut l'agilité à ton personnage. Attention il doit être en 0 et 100.");
-                                choixAgilite = sc.nextInt();
-                                if (choixAgilite < 0 || choixAgilite > 100)
-                                    System.out.println("Attention, tu dois choisir entre 0 et 100.");
-                                else
-                                    joueur1.setAgilite(choixAgilite);
-                            } while (choixAgilite < 0 || choixAgilite > 100);
-                        do {
-                                System.out.println("Attribut l'intelligence à ton personnage. Attention il doit être en 0 et 100.");
-                                choixIntelligence = sc.nextInt();
-                                if (choixIntelligence < 0 || choixIntelligence > 100)
-                                    System.out.println("Attention, tu dois choisir entre 0 et 100.");
-                                else
-                                    joueur1.setIntelligence(choixIntelligence);
-                            } while (choixIntelligence < 0 || choixIntelligence > 100);
-                        totalFAI = choixForce + choixAgilite + choixIntelligence;
-                        } while (choixNiveau != totalFAI);
-                    joueur1.setVie(vie);
-                    joueur1.description();
-                    System.out.println("\n");
                     break;
                 case 2:
                     System.out.println("\nVous avez choisi de créer un rôdeur !\n");
                     joueur1 = new Rodeur();
-                    do {
-                        do {
-                            System.out.println("Attribut un niveau à ton personnage. \nAttention : Il doit être en 1 et 100 et le total de : FORCE + AGILITE + INTELLIGENCE doit être égal au niveau !\n ");
-                            choixNiveau = sc.nextInt();
-                            if (choixNiveau < 1 || choixNiveau > 100)
-                                System.out.println("Attention, tu dois choisir entre 1 et 100.");
-                            else
-                                joueur1.setNiveau(choixNiveau);
-                        } while (choixNiveau < 1 || choixNiveau > 100);
-                        do {
-                            System.out.println("Attribut la force à ton personnage. Attention il doit être en 0 et 100.");
-                            choixForce = sc.nextInt();
-                            if (choixForce < 0 || choixForce > 100)
-                                System.out.println("Attention, tu dois choisir entre 0 et 100.");
-                            else
-                                joueur1.setForce(choixForce);
-                        } while (choixForce < 0 || choixForce > 100);
-                        do {
-                            System.out.println("Attribut l'agilité à ton personnage. Attention il doit être en 0 et 100.");
-                            choixAgilite = sc.nextInt();
-                            if (choixAgilite < 0 || choixAgilite > 100)
-                                System.out.println("Attention, tu dois choisir entre 0 et 100.");
-                            else
-                                joueur1.setAgilite(choixAgilite);
-                        } while (choixAgilite < 0 || choixAgilite > 100);
-                        do {
-                            System.out.println("Attribut l'intelligence à ton personnage. Attention il doit être en 0 et 100.");
-                            choixIntelligence = sc.nextInt();
-                            if (choixIntelligence < 0 || choixIntelligence > 100)
-                                System.out.println("Attention, tu dois choisir entre 0 et 100.");
-                            else
-                                joueur1.setIntelligence(choixIntelligence);
-                        } while (choixIntelligence < 0 || choixIntelligence > 100);
-                        totalFAI = choixForce + choixAgilite + choixIntelligence;
-                    } while (choixNiveau != totalFAI);
-                    joueur1.setVie(vie);
-                    joueur1.description();
-                    System.out.println("\n");
                     break;
                 case 3:
                     System.out.println("\nVous avez choisi de créer un mage !\n");
                     joueur1 = new Mage();
-                    do {
-                        do {
-                            System.out.println("Attribut un niveau à ton personnage. \nAttention : Il doit être en 1 et 100 et le total de : FORCE + AGILITE + INTELLIGENCE doit être égal au niveau !\n ");
-                            choixNiveau = sc.nextInt();
-                            if (choixNiveau < 1 || choixNiveau > 100)
-                                System.out.println("Attention, tu dois choisir entre 1 et 100.");
-                            else
-                                joueur1.setNiveau(choixNiveau);
-                        } while (choixNiveau < 1 || choixNiveau > 100);
-                        do {
-                            System.out.println("Attribut la force à ton personnage. Attention il doit être en 0 et 100.");
-                            choixForce = sc.nextInt();
-                            if (choixForce < 0 || choixForce > 100)
-                                System.out.println("Attention, tu dois choisir entre 0 et 100.");
-                            else
-                                joueur1.setForce(choixForce);
-                        } while (choixForce < 0 || choixForce > 100);
-                        do {
-                            System.out.println("Attribut l'agilité à ton personnage. Attention il doit être en 0 et 100.");
-                            choixAgilite = sc.nextInt();
-                            if (choixAgilite < 0 || choixAgilite > 100)
-                                System.out.println("Attention, tu dois choisir entre 0 et 100.");
-                            else
-                                joueur1.setAgilite(choixAgilite);
-                        } while (choixAgilite < 0 || choixAgilite > 100);
-                        do {
-                            System.out.println("Attribut l'intelligence à ton personnage. Attention il doit être en 0 et 100.");
-                            choixIntelligence = sc.nextInt();
-                            if (choixIntelligence < 0 || choixIntelligence > 100)
-                                System.out.println("Attention, tu dois choisir entre 0 et 100.");
-                            else
-                                joueur1.setIntelligence(choixIntelligence);
-                        } while (choixIntelligence < 0 || choixIntelligence > 100);
-                        totalFAI = choixForce + choixAgilite + choixIntelligence;
-                    } while (choixNiveau != totalFAI);
-                    joueur1.setVie(vie);
-                    joueur1.description();
-                    System.out.println("\n");
                     break;
-                default:
-                    System.out.println("\n-----------------OUCH LE TYPE FEE N'EXISTE PAS ENCORE, RETENTE 1,2 OU 3!-------------------\n");
             }
         } while (type < 1 || type > 3);
+        do {
+            do {
+                System.out.println("Attribut un niveau à ton personnage. \nAttention : Il doit être en 1 et 100 et le total de : FORCE + AGILITE + INTELLIGENCE doit être égal au niveau !\n ");
+                choixNiveau = sc.nextInt();
+                if (choixNiveau < 1 || choixNiveau > 100)
+                    System.out.println("Attention, tu dois choisir entre 1 et 100.");
+                else
+                    joueur1.setNiveau(choixNiveau);
+            } while (choixNiveau < 1 || choixNiveau > 100);
+            do {
+                System.out.println("Attribut la force à ton personnage. Attention il doit être en 0 et 100.");
+                choixForce = sc.nextInt();
+                if (choixForce < 0 || choixForce > 100)
+                    System.out.println("Attention, tu dois choisir entre 0 et 100.");
+                else
+                    joueur1.setForce(choixForce);
+            } while (choixForce < 0 || choixForce > 100);
+            do {
+                System.out.println("Attribut l'agilité à ton personnage. Attention il doit être en 0 et 100.");
+                choixAgilite = sc.nextInt();
+                if (choixAgilite < 0 || choixAgilite > 100)
+                    System.out.println("Attention, tu dois choisir entre 0 et 100.");
+                else
+                    joueur1.setAgilite(choixAgilite);
+            } while (choixAgilite < 0 || choixAgilite > 100);
+            do {
+                System.out.println("Attribut l'intelligence à ton personnage. Attention il doit être en 0 et 100.");
+                choixIntelligence = sc.nextInt();
+                if (choixIntelligence < 0 || choixIntelligence > 100)
+                    System.out.println("Attention, tu dois choisir entre 0 et 100.");
+                else
+                    joueur1.setIntelligence(choixIntelligence);
+            } while (choixIntelligence < 0 || choixIntelligence > 100);
+            totalFAI = choixForce + choixAgilite + choixIntelligence;
+        } while (choixNiveau != totalFAI);
+        joueur1.setVie(vie);
+        joueur1.description();
+        System.out.println("\n");
 
         do {
         System.out.println("              Joueur 2, entre dans l'arène et crée ton personnage ! \nQue souhaites-tu devenir ?(saisis 1,2 ou 3) : \n1- Un guerrier; \n2- Un rôdeur; \n3- Un mage.");

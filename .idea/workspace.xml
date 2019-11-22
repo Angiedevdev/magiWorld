@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8da8e5d8-d6f7-4170-92c0-70bc19f2337f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/magiWorld/com/ocr/fonctionnementMagiWorld/PartieJeu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/magiWorld/com/ocr/fonctionnementMagiWorld/PartieJeu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/magiWorld/com/ocr/personnagesMagiWorld/Personnages.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/magiWorld/com/ocr/personnagesMagiWorld/Personnages.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ocr/fonctionnementMagiWorld/PartieJeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/fonctionnementMagiWorld/PartieJeu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ocr/personnagesMagiWorld/Guerrier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/personnagesMagiWorld/Guerrier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ocr/personnagesMagiWorld/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/personnagesMagiWorld/Mage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ocr/personnagesMagiWorld/Personnages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/personnagesMagiWorld/Personnages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ocr/personnagesMagiWorld/Rodeur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/personnagesMagiWorld/Rodeur.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +19,9 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="magiWorld" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -29,6 +30,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Angiedevdev &lt;angelique-bourdon@outlook.fr&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
@@ -87,6 +93,21 @@
       <option name="presentableId" value="Default" />
       <updated>1573203154938</updated>
     </task>
+    <task id="LOCAL-00001" summary="Code fonctionnel. &#10;Reste javadoc et factorisation">
+      <created>1574266813275</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574266813275</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Code fonctionnel. &#10;Reste javadoc et factorisation">
+      <created>1574267576987</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1574267576987</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -94,10 +115,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Code fonctionnel. &#10;Reste javadoc et factorisation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code fonctionnel. &#10;Reste javadoc et factorisation" />
   </component>
 </project>
