@@ -3,19 +3,32 @@ package com.ocr.personnagesMagiWorld;
 public class Mage extends Personnages {
 
     private final int vieMax = getVie();
-    //Constructeur par défaut
+    /** Constructeur par défaut de l'objet mage.
+     */
     public Mage() {
         super();
     }
-    //Constructeur avec paramètres
+    /** Constructeur avec paramètres de l'objet mage.
+     * @param agilite
+     * @param force
+     * @param intelligence
+     * @param niveau
+     * @param vie
+     */
     public Mage(int vie, int niveau, int force, int intelligence, int agilite) {
         super(vie, niveau, force, intelligence, agilite);
     }
+    /** Le joueur attaque sa victime avec attaque de base.
+     * @param victime
+     */
     @Override
     public void attaqueBasique(Personnages victime) {
         victime.vie = victime.vie - this.intelligence;
         super.attaqueBasique(victime);
     }
+    /** Le joueur attaque sa victime avec attaque spécifique.
+     * @param victime
+     */
     @Override
     public void attaqueSpeciale(Personnages victime) {
         this.vie = this.intelligence * 2;

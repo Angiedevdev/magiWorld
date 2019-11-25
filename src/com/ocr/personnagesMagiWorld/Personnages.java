@@ -2,74 +2,108 @@ package com.ocr.personnagesMagiWorld;
 
 public abstract class Personnages {
 
-   protected int vie, niveau, force, intelligence, agilite;
-    //Constructeur par defaut
-    protected Personnages() {
+   int vie, niveau, force, intelligence, agilite;
+
+    /** Constructeur par défaut de l'objet personnage.
+     */
+    Personnages() {
         niveau = 0;
         force = 0;
         intelligence = 0;
         agilite = 0;
         this.getVie();
     }
-    protected Personnages(int vie, int niveau, int force, int intelligence, int agilite) {
+    /** Constructeur avec paramètres de l'objet personnage.
+     * @param agilite
+     * @param force
+     * @param intelligence
+     * @param niveau
+     * @param vie
+     */
+    Personnages(int vie, int niveau, int force, int intelligence, int agilite) {
         this.vie = niveau*5;
         this.niveau = niveau;
         this.force = force;
         this.intelligence = intelligence;
         this.agilite = agilite;
     }
-    //-----ACCESSEURS-----
-    //Permet d'accéder à la vie du personnage :
+    //             ACCESSEURS
+    /**Accède à la vie du joueur
+     * @return vie
+     */
     public int getVie() {
         return vie;
     }
-    //Permet d'accéder au niveau du personnage :
-    public int getNiveau() {
+    /**Accède au niveau du joueur
+     * @return niveau
+     */
+    private int getNiveau() {
         return niveau;
     }
-    //Permet d'accéder à la force du personnage :
-    public int getForce() {
+    /**Accède à la force du joueur
+     * @return force
+     */
+    private int getForce() {
         return force;
     }
-    //Permet d'accéder à l'intelligence du personnage :
-    public int getIntelligence() {
+    /**Accède à l'intelligence du joueur
+     * @return intelligence
+     */
+    private int getIntelligence() {
         return intelligence;
     }
-    //Permet d'accéder à l'agilité du personnage :
-    public int getAgilite() {
+    /** Accède à l'agilité du joueur
+     * @return agilite */
+    private int getAgilite() {
         return agilite;
     }
-    //-------MUTATEURS-----
-    //Permet de modifier la vie du personnage : (!!!!!!!Attention peut-être à retirer puisque la vie s'initialise par calcul.
+    //        MUTATEURS :
+    /** Modifie vie du joueur
+     * @param vie
+     */
     public void setVie(int vie) {
         this.vie = this.niveau*5;
     }
-    //Permet de modifier le niveau du personnage :
+    /** Modifie niveau du joueur
+     * @param niveau
+     */
     public void setNiveau(int niveau) {
         this.niveau = niveau;
     }
-    //Permet de modifier la force du personnage :
+    /** Modifie force du joueur
+     * @param force
+     */
     public void setForce(int force) {
         this.force = force;
     }
-    //Permet de modifier l'intelligence du personnage :
+    /** Modifie intelligence du joueur
+     * @param intelligence
+     */
     public void setIntelligence(int intelligence) {
         this.intelligence = intelligence;
     }
-    //Permet de modifier l'agilité du personnage :
+    /** Modifie agilité du joueur
+     * @param agilite
+     */
     public void setAgilite(int agilite) {
         this.agilite = agilite;
     }
-    //------FONCTIONS-------
-    //Permet d'afficher la description complète du personnage :
+    //          FONCTIONS :
+    /** Le joueur se décrit avec ses fonctions vitales.
+     */
     public void description() {
         System.out.println("Je suis un "+ getClass().getSimpleName() + " (" + getVie() + " de vitalité), de niveau " + getNiveau() + ", de force " + getForce() + ", d'intelligence " + getIntelligence() + ", d'agilité " + getAgilite() + ".");
     }
-    //Permet une attaque basique
+    /** Le joueur attaque sa victime avec attaque de base.
+     * @param victime
+     */
     public void attaqueBasique(Personnages victime) {
         System.out.println("Je viens de lancer l'attaque basique. Regarde le résultat : ");
         System.out.println("Il te reste " + victime.vie + " de vitalité, " + victime.force + " de force, " + victime.intelligence + " d'intelligence, " + victime.agilite + " d'agilité !");
     }
+    /** Le joueur attaque sa victime avec attaque spécifique.
+     * @param victime
+     */
     public void attaqueSpeciale(Personnages victime) {
         System.out.println("Je viens de lancer l'attaque spéciale. Regarde le résultat :");
         System.out.println("Il te reste " + victime.vie + " de vitalité, " + victime.force + " de force, " + victime.intelligence + " d'intelligence, " + victime.agilite + " d'agilité!");
