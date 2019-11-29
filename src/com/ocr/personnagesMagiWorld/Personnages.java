@@ -1,12 +1,12 @@
 package com.ocr.personnagesMagiWorld;
 
-public abstract class Personnages {
+public class Personnages {
 
    int vie, niveau, force, intelligence, agilite;
 
     /** Constructeur par défaut de l'objet personnage.
      */
-    Personnages() {
+    public Personnages() {
         niveau = 0;
         force = 0;
         intelligence = 0;
@@ -20,7 +20,7 @@ public abstract class Personnages {
      * @param niveau
      * @param vie
      */
-    Personnages(int vie, int niveau, int force, int intelligence, int agilite) {
+    public Personnages(int vie, int niveau, int force, int intelligence, int agilite) {
         this.vie = niveau*5;
         this.niveau = niveau;
         this.force = force;
@@ -92,7 +92,7 @@ public abstract class Personnages {
     /** Le joueur se décrit avec ses fonctions vitales.
      */
     public void description() {
-        System.out.println("Je suis un "+ getClass().getSimpleName() + " (" + getVie() + " de vitalité), de niveau " + getNiveau() + ", de force " + getForce() + ", d'intelligence " + getIntelligence() + ", d'agilité " + getAgilite() + ".");
+        System.out.println("Je suis un "+ getClass().getSimpleName() + " (" + getVie() + " de vitalité), de niveau " + getNiveau() + ", de force " + getForce() + ", d'intelligence " + getIntelligence() + ", d'agilité " + getAgilite() + ".\n");
     }
     /** Le joueur attaque sa victime avec attaque de base.
      * @param victime

@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8da8e5d8-d6f7-4170-92c0-70bc19f2337f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/PartieJeuTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/PersonnagesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/magiWorld/com/ocr/appsMagiWorld/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/magiWorld/com/ocr/appsMagiWorld/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/magiWorld.iml" beforeDir="false" afterPath="$PROJECT_DIR$/magiWorld.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/magiWorld/com/ocr/fonctionnementMagiWorld/PartieJeu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/magiWorld/com/ocr/fonctionnementMagiWorld/PartieJeu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/magiWorld/com/ocr/personnagesMagiWorld/Guerrier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/magiWorld/com/ocr/personnagesMagiWorld/Guerrier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/magiWorld/com/ocr/personnagesMagiWorld/Mage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/magiWorld/com/ocr/personnagesMagiWorld/Mage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/magiWorld/com/ocr/personnagesMagiWorld/Personnages.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/magiWorld/com/ocr/personnagesMagiWorld/Personnages.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/magiWorld/com/ocr/personnagesMagiWorld/Rodeur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/magiWorld/com/ocr/personnagesMagiWorld/Rodeur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ocr/appsMagiWorld/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/appsMagiWorld/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ocr/fonctionnementMagiWorld/PartieJeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/fonctionnementMagiWorld/PartieJeu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ocr/personnagesMagiWorld/Guerrier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/personnagesMagiWorld/Guerrier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ocr/personnagesMagiWorld/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/personnagesMagiWorld/Mage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ocr/personnagesMagiWorld/Personnages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/personnagesMagiWorld/Personnages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ocr/personnagesMagiWorld/Rodeur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/personnagesMagiWorld/Rodeur.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +29,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -54,14 +49,28 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MagicGithub" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="test" />
+      <recent name="com.ocr.personnagesMagiWorld" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.ocr.personnagesMagiWorld" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -76,7 +85,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.ocr.appsMagiWorld.Main" />
       <module name="magiWorld" />
@@ -87,9 +96,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PartieJeuTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="magiWorld" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.PartieJeuTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonnagesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="magiWorld" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.PersonnagesTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.PartieJeuTest" />
+        <item itemvalue="JUnit.PersonnagesTest" />
       </list>
     </recent_temporary>
   </component>
