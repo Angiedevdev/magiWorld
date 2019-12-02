@@ -99,7 +99,7 @@ public class Personnages {
      */
     public void attaqueBasique(Personnages victime) {
         System.out.println("Je viens de lancer l'attaque basique. Regarde le résultat : ");
-        System.out.println("Il te reste " + victime.vie + " de vitalité, " + victime.force + " de force, " + victime.intelligence + " d'intelligence, " + victime.agilite + " d'agilité !");
+        System.out.println("Il te reste " + victime.vie + " de vitalité, " + victime.force + " de force, " + victime.intelligence + " d'intelligence, " + victime.agilite + " d'agilité !\n");
     }
     /** Le joueur attaque sa victime avec attaque spécifique.
      * @param victime
@@ -107,6 +107,6 @@ public class Personnages {
     public void attaqueSpeciale(Personnages victime) {
         System.out.println("Je viens de lancer l'attaque spéciale. Regarde le résultat :");
         System.out.println("Il te reste " + victime.vie + " de vitalité, " + victime.force + " de force, " + victime.intelligence + " d'intelligence, " + victime.agilite + " d'agilité!");
-        System.out.println("Quant à moi, il me reste " + this.vie + " de vitalité, " + this.force + " de force, " + this.intelligence + " d'intelligence, " + this.agilite + " d'agilité!");
+        System.out.println("Quant à moi, il me reste " + this.vie + " de vitalité, " + this.force + " de force, " + this.intelligence + " d'intelligence, " + this.agilite + " d'agilité!\n");
     }
 }
