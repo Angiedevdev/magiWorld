@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8da8e5d8-d6f7-4170-92c0-70bc19f2337f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/GuerrierTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/MageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/RodeurTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/magiWorld/com/ocr/fonctionnementMagiWorld/PartieJeu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/magiWorld/com/ocr/fonctionnementMagiWorld/PartieJeu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/magiWorld/com/ocr/personnagesMagiWorld/Mage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/magiWorld/com/ocr/personnagesMagiWorld/Mage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/magiWorld/com/ocr/personnagesMagiWorld/Personnages.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/magiWorld/com/ocr/personnagesMagiWorld/Personnages.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/magiWorld/com/ocr/personnagesMagiWorld/Rodeur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/magiWorld/com/ocr/personnagesMagiWorld/Rodeur.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ocr/fonctionnementMagiWorld/PartieJeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/fonctionnementMagiWorld/PartieJeu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ocr/personnagesMagiWorld/Guerrier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/personnagesMagiWorld/Guerrier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ocr/personnagesMagiWorld/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/personnagesMagiWorld/Mage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ocr/personnagesMagiWorld/Personnages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/personnagesMagiWorld/Personnages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ocr/personnagesMagiWorld/Rodeur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/personnagesMagiWorld/Rodeur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/PartieJeuTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/PersonnagesTest.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +72,7 @@
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="test" />
+      <recent name="com.ocr.fonctionnementMagiWorld" />
       <recent name="com.ocr.personnagesMagiWorld" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -84,7 +94,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.RodeurTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.ocr.appsMagiWorld.Main" />
       <module name="magiWorld" />
@@ -95,7 +105,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PartieJeuTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="magiWorld" />
       <extension name="coverage">
         <pattern>
@@ -104,7 +114,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.PartieJeuTest" />
+      <option name="MAIN_CLASS_NAME" value="test.MageTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -125,10 +135,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PersonnagesTest.testPersonnagesDescriptionestEgaleauCalcul" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="magiWorld" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.PersonnagesTest" />
+      <option name="METHOD_NAME" value="testPersonnagesDescriptionestEgaleauCalcul" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RodeurTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="magiWorld" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.RodeurTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RodeurTest" />
+        <item itemvalue="JUnit.MageTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.PartieJeuTest" />
+        <item itemvalue="JUnit.PersonnagesTest.testPersonnagesDescriptionestEgaleauCalcul" />
         <item itemvalue="JUnit.PersonnagesTest" />
       </list>
     </recent_temporary>

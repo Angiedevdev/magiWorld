@@ -110,13 +110,13 @@ public class PartieJeu {
         choixAgilite = choixNiveau - (choixForce + choixIntelligence);
         switch (type) {
             case 1:
-                joueur = new Guerrier(vie, choixNiveau, choixForce, choixIntelligence, choixAgilite);
+                joueur = new Guerrier(choixNiveau, choixForce, choixIntelligence, choixAgilite);
                 break;
             case 2:
-                joueur = new Rodeur(vie, choixNiveau, choixForce, choixIntelligence, choixAgilite);
+                joueur = new Rodeur(choixNiveau, choixForce, choixIntelligence, choixAgilite);
                 break;
             case 3:
-                joueur = new Mage(vie, choixNiveau, choixForce, choixIntelligence, choixAgilite);
+                joueur = new Mage(choixNiveau, choixForce, choixIntelligence, choixAgilite);
                 break;
             default:
                 System.out.println("\nLe mode fée n'existe pas encore !");

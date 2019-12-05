@@ -11,10 +11,9 @@ public class Rodeur extends Personnages {
      * @param force
      * @param intelligence
      * @param niveau
-     * @param vie
      */
-    public Rodeur(int vie, int niveau, int force, int intelligence, int agilite) {
-        super(vie, niveau, force, intelligence, agilite);
+    public Rodeur(int niveau, int force, int intelligence, int agilite) {
+        super(niveau, force, intelligence, agilite);
     }
     /** Le joueur attaque sa victime avec attaque de base.
      * @param victime

@@ -13,10 +13,9 @@ public class Mage extends Personnages {
      * @param force
      * @param intelligence
      * @param niveau
-     * @param vie
      */
-    public Mage(int vie, int niveau, int force, int intelligence, int agilite) {
-        super(vie, niveau, force, intelligence, agilite);
+    public Mage(int niveau, int force, int intelligence, int agilite) {
+        super(niveau, force, intelligence, agilite);
     }
     /** Le joueur attaque sa victime avec attaque de base.
      * @param victime
@@ -31,7 +30,7 @@ public class Mage extends Personnages {
      */
     @Override
     public void attaqueSpeciale(Personnages victime) {
-        this.vie = this.intelligence * 2;
+        this.vie = this.vie + (this.intelligence * 2);
             if (this.vie > this.getVie())
                 this.vie = vieMax;
         super.attaqueSpeciale(victime);

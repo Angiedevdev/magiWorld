@@ -11,10 +11,9 @@ public class Guerrier extends Personnages {
      * @param force
      * @param intelligence
      * @param niveau
-     * @param vie
      */
-    public Guerrier(int vie, int niveau, int force, int intelligence, int agilite) {
-        super(vie, niveau, force, intelligence, agilite);
+    public Guerrier(int niveau, int force, int intelligence, int agilite) {
+        super(niveau, force, intelligence, agilite);
     }
     /** Le joueur attaque sa victime avec attaque de base.
      * @param victime

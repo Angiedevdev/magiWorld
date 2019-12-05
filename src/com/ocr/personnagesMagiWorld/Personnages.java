@@ -18,9 +18,8 @@ public class Personnages {
      * @param force
      * @param intelligence
      * @param niveau
-     * @param vie
      */
-    public Personnages(int vie, int niveau, int force, int intelligence, int agilite) {
+    public Personnages(int niveau, int force, int intelligence, int agilite) {
         this.vie = niveau*5;
         this.niveau = niveau;
         this.force = force;
@@ -37,24 +36,24 @@ public class Personnages {
     /**Accède au niveau du joueur
      * @return niveau
      */
-    private int getNiveau() {
+    protected int getNiveau() {
         return niveau;
     }
     /**Accède à la force du joueur
      * @return force
      */
-    private int getForce() {
+    public int getForce() {
         return force;
     }
     /**Accède à l'intelligence du joueur
      * @return intelligence
      */
-    private int getIntelligence() {
+    public int getIntelligence() {
         return intelligence;
     }
     /** Accède à l'agilité du joueur
      * @return agilite */
-    private int getAgilite() {
+    public int getAgilite() {
         return agilite;
     }
     //        MUTATEURS :
@@ -90,9 +89,10 @@ public class Personnages {
     }
     //          FONCTIONS :
     /** Le joueur se décrit avec ses fonctions vitales.
+     * @return
      */
     public void description() {
-        System.out.println("Je suis un "+ getClass().getSimpleName() + " (" + getVie() + " de vitalité), de niveau " + getNiveau() + ", de force " + getForce() + ", d'intelligence " + getIntelligence() + ", d'agilité " + getAgilite() + ".\n");
+       System.out.println("Je suis un "+ getClass().getSimpleName() + " (" + getVie() + " de vitalité), de niveau " + getNiveau() + ", de force " + getForce() + ", d'intelligence " + getIntelligence() + ", d'agilité " + getAgilite() + ".\n");
     }
     /** Le joueur attaque sa victime avec attaque de base.
      * @param victime
